@@ -7,7 +7,7 @@ import axios from "axios";
 const App = () => {
   const instance = axios.create({
     withCredentials: true,
-    baseURL: "http://localhost:4000",
+    baseURL: "https://cookie-server-backend.onrender.com/",
   });
 
   const handleLogin = () => {
