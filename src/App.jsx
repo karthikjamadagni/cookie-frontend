@@ -15,7 +15,10 @@ const App = () => {
     let y = document.getElementById("password").value;
 
     try {
-     instance.post('/login', {x, y})
+     instance.post('/login', {x, y}).
+      then((response)=>{
+        console.log(response.data);
+      })
     } catch (err) {
       console.log(err);
     }
