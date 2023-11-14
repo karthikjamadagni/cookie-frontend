@@ -20,6 +20,7 @@ const App = () => {
         console.log(response.data);
       })
     } catch (err) {
+      console.log("Some error is coming")
       console.log(err);
     }
   };
